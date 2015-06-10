@@ -1,4 +1,3 @@
-ld/
 build/
 *.pbxuser
 !default.pbxuser
