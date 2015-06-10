@@ -14,6 +14,7 @@
 		701FB0361B286E95009A7D74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0351B286E95009A7D74 /* Images.xcassets */; };
 		701FB0391B286E95009A7D74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0371B286E95009A7D74 /* LaunchScreen.xib */; };
 		701FB0451B286E95009A7D74 /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0441B286E95009A7D74 /* WeatherTests.m */; };
+		924A7732F6354E06DA846886 /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601E69D42EEF557DC06C103 /* libPods-Weather.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		701FB03E1B286E95009A7D74 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		701FB0431B286E95009A7D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701FB0441B286E95009A7D74 /* WeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTests.m; sourceTree = "<group>"; };
+		7601E69D42EEF557DC06C103 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
+		E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924A7732F6354E06DA846886 /* libPods-Weather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				701FB0271B286E95009A7D74 /* Weather */,
 				701FB0411B286E95009A7D74 /* WeatherTests */,
 				701FB0261B286E95009A7D74 /* Products */,
+				B18072864EA2A67C55F0EE01 /* Pods */,
+				807EC94569503D4F7EA208BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		807EC94569503D4F7EA208BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7601E69D42EEF557DC06C103 /* libPods-Weather.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B18072864EA2A67C55F0EE01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */,
+				E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 701FB0481B286E95009A7D74 /* Build configuration list for PBXNativeTarget "Weather" */;
 			buildPhases = (
+				84819EB4F270959ABBE9565E /* Check Pods Manifest.lock */,
 				701FB0211B286E95009A7D74 /* Sources */,
 				701FB0221B286E95009A7D74 /* Frameworks */,
 				701FB0231B286E95009A7D74 /* Resources */,
+				D211E9CE9261F668E523365F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84819EB4F270959ABBE9565E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D211E9CE9261F668E523365F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weather/Pods-Weather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		701FB0211B286E95009A7D74 /* Sources */ = {
@@ -341,6 +400,7 @@
 		};
 		701FB0491B286E95009A7D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Weather/Info.plist;
@@ -351,6 +411,7 @@
 		};
 		701FB04A1B286E95009A7D74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Weather/Info.plist;
@@ -412,6 +473,7 @@
 				701FB04A1B286E95009A7D74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701FB04B1B286E95009A7D74 /* Build configuration list for PBXNativeTarget "WeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				701FB04D1B286E95009A7D74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
