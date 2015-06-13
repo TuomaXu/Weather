@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "CurrentWeatherViewController.h"
+#import <CoreLocation/CoreLocation.h>
+@interface AppDelegate ()<CLLocationManagerDelegate>
 
 @end
 
@@ -16,9 +17,24 @@
 
 -(void)applicationDidFinishLaunching:(UIApplication *)application {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
+//    self.window.rootViewController = [CurrentWeatherViewController new];
+    
+    CLLocationManager * manager = [[CLLocationManager alloc]init];
+    manager.delegate = self;
+    [manager requestWhenInUseAuthorization];
+    [manager startUpdatingLocation];
+       NSLog(@"%@", NSLocalizedString(@"Test", nil));
+}
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
     
 }
-
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    
+}
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    
+}
 @end

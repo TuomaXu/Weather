@@ -14,6 +14,8 @@
 		701FB0391B286E95009A7D74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0371B286E95009A7D74 /* LaunchScreen.xib */; };
 		701FB0451B286E95009A7D74 /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0441B286E95009A7D74 /* WeatherTests.m */; };
 		7080E87B1B2C6987001B99E3 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E87A1B2C6987001B99E3 /* ForecastViewController.m */; };
+		7080E8801B2C6B41001B99E3 /* CurrentWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E87F1B2C6B41001B99E3 /* CurrentWeather.m */; };
+		7080E8831B2C6B5D001B99E3 /* Forecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E8821B2C6B5D001B99E3 /* Forecast.m */; };
 		924A7732F6354E06DA846886 /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601E69D42EEF557DC06C103 /* libPods-Weather.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,10 @@
 		701FB0441B286E95009A7D74 /* WeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTests.m; sourceTree = "<group>"; };
 		7080E8791B2C6987001B99E3 /* ForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
 		7080E87A1B2C6987001B99E3 /* ForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
+		7080E87E1B2C6B41001B99E3 /* CurrentWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentWeather.h; path = Model/CurrentWeather.h; sourceTree = "<group>"; };
+		7080E87F1B2C6B41001B99E3 /* CurrentWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentWeather.m; path = Model/CurrentWeather.m; sourceTree = "<group>"; };
+		7080E8811B2C6B5D001B99E3 /* Forecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Forecast.h; path = Model/Forecast.h; sourceTree = "<group>"; };
+		7080E8821B2C6B5D001B99E3 /* Forecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Forecast.m; path = Model/Forecast.m; sourceTree = "<group>"; };
 		7601E69D42EEF557DC06C103 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 				701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */,
 				7080E8791B2C6987001B99E3 /* ForecastViewController.h */,
 				7080E87A1B2C6987001B99E3 /* ForecastViewController.m */,
+				7080E87D1B2C6AFA001B99E3 /* Models */,
 				701FB0351B286E95009A7D74 /* Images.xcassets */,
 				701FB0371B286E95009A7D74 /* LaunchScreen.xib */,
 				701FB0281B286E95009A7D74 /* Supporting Files */,
@@ -126,6 +133,17 @@
 				701FB0431B286E95009A7D74 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7080E87D1B2C6AFA001B99E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7080E87E1B2C6B41001B99E3 /* CurrentWeather.h */,
+				7080E87F1B2C6B41001B99E3 /* CurrentWeather.m */,
+				7080E8811B2C6B5D001B99E3 /* Forecast.h */,
+				7080E8821B2C6B5D001B99E3 /* Forecast.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		807EC94569503D4F7EA208BE /* Frameworks */ = {
@@ -279,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7080E8831B2C6B5D001B99E3 /* Forecast.m in Sources */,
 				701FB0311B286E95009A7D74 /* CurrentWeatherViewController.m in Sources */,
 				7080E87B1B2C6987001B99E3 /* ForecastViewController.m in Sources */,
 				701FB02E1B286E95009A7D74 /* AppDelegate.m in Sources */,
+				7080E8801B2C6B41001B99E3 /* CurrentWeather.m in Sources */,
 				701FB02B1B286E95009A7D74 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
