@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		701FB02B1B286E95009A7D74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB02A1B286E95009A7D74 /* main.m */; };
 		701FB02E1B286E95009A7D74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB02D1B286E95009A7D74 /* AppDelegate.m */; };
-		701FB0311B286E95009A7D74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0301B286E95009A7D74 /* ViewController.m */; };
-		701FB0341B286E95009A7D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0321B286E95009A7D74 /* Main.storyboard */; };
+		701FB0311B286E95009A7D74 /* CurrentWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */; };
 		701FB0361B286E95009A7D74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0351B286E95009A7D74 /* Images.xcassets */; };
 		701FB0391B286E95009A7D74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0371B286E95009A7D74 /* LaunchScreen.xib */; };
 		701FB0451B286E95009A7D74 /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0441B286E95009A7D74 /* WeatherTests.m */; };
+		7080E87B1B2C6987001B99E3 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E87A1B2C6987001B99E3 /* ForecastViewController.m */; };
 		924A7732F6354E06DA846886 /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601E69D42EEF557DC06C103 /* libPods-Weather.a */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +33,15 @@
 		701FB02A1B286E95009A7D74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		701FB02C1B286E95009A7D74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		701FB02D1B286E95009A7D74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		701FB02F1B286E95009A7D74 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		701FB0301B286E95009A7D74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		701FB0331B286E95009A7D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		701FB02F1B286E95009A7D74 /* CurrentWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentWeatherViewController.h; sourceTree = "<group>"; };
+		701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentWeatherViewController.m; sourceTree = "<group>"; };
 		701FB0351B286E95009A7D74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		701FB0381B286E95009A7D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		701FB03E1B286E95009A7D74 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		701FB0431B286E95009A7D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701FB0441B286E95009A7D74 /* WeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTests.m; sourceTree = "<group>"; };
+		7080E8791B2C6987001B99E3 /* ForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
+		7080E87A1B2C6987001B99E3 /* ForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
 		7601E69D42EEF557DC06C103 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,9 +91,10 @@
 			children = (
 				701FB02C1B286E95009A7D74 /* AppDelegate.h */,
 				701FB02D1B286E95009A7D74 /* AppDelegate.m */,
-				701FB02F1B286E95009A7D74 /* ViewController.h */,
-				701FB0301B286E95009A7D74 /* ViewController.m */,
-				701FB0321B286E95009A7D74 /* Main.storyboard */,
+				701FB02F1B286E95009A7D74 /* CurrentWeatherViewController.h */,
+				701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */,
+				7080E8791B2C6987001B99E3 /* ForecastViewController.h */,
+				7080E87A1B2C6987001B99E3 /* ForecastViewController.m */,
 				701FB0351B286E95009A7D74 /* Images.xcassets */,
 				701FB0371B286E95009A7D74 /* LaunchScreen.xib */,
 				701FB0281B286E95009A7D74 /* Supporting Files */,
@@ -225,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				701FB0341B286E95009A7D74 /* Main.storyboard in Resources */,
 				701FB0391B286E95009A7D74 /* LaunchScreen.xib in Resources */,
 				701FB0361B286E95009A7D74 /* Images.xcassets in Resources */,
 			);
@@ -278,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				701FB0311B286E95009A7D74 /* ViewController.m in Sources */,
+				701FB0311B286E95009A7D74 /* CurrentWeatherViewController.m in Sources */,
+				7080E87B1B2C6987001B99E3 /* ForecastViewController.m in Sources */,
 				701FB02E1B286E95009A7D74 /* AppDelegate.m in Sources */,
 				701FB02B1B286E95009A7D74 /* main.m in Sources */,
 			);
@@ -303,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		701FB0321B286E95009A7D74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				701FB0331B286E95009A7D74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		701FB0371B286E95009A7D74 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

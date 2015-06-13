@@ -6,22 +6,18 @@
 //  Copyright (c) 2015年 信通惠德. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CurrentWeatherViewController.h"
 
-@interface ViewController ()
+@interface CurrentWeatherViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CurrentWeatherViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
