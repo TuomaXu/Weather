@@ -11,4 +11,6 @@ NSString * const WNDateValueTransformerName;
 NSString * const WNCLLocationCoordinate2DValueTransformerName;
 @interface NSValueTransformer (WNTransformerAdditions)
 
++(NSValueTransformer*)dateValueTransformer;
++(NSValueTransformer*)coordinateValueTransformer;
 @end

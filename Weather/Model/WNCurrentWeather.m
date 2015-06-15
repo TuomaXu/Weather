@@ -17,7 +17,6 @@
               @"weatherDesc":@"description"
              };
 }
-
 @end
 
 @implementation WNCurrentWeather

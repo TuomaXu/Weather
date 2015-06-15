@@ -22,14 +22,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     [[WNCurrentWeatherManager new]getCurrentWeatherByCurrentLocationSuccess:^(id responseObject) {
-        
-        NSLog(@"%@",responseObject);
-        NSError * err;
-        WNCurrentWeather * weather =[WNCurrentWeather modelFromDictionary:responseObject error:&err];
-        NSLog(@"%@",weather);
-
-        id dic = [weather dictionaryValue];
-        
+        WNCurrentWeather * weather =[WNCurrentWeather modelFromDictionary:responseObject error:nil];
     }];
 }
 @end
