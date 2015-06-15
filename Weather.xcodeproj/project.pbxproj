@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		701FB02B1B286E95009A7D74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB02A1B286E95009A7D74 /* main.m */; };
-		701FB02E1B286E95009A7D74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB02D1B286E95009A7D74 /* AppDelegate.m */; };
-		701FB0311B286E95009A7D74 /* CurrentWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */; };
+		701FB02E1B286E95009A7D74 /* WNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB02D1B286E95009A7D74 /* WNAppDelegate.m */; };
+		701FB0311B286E95009A7D74 /* WNCurrentWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0301B286E95009A7D74 /* WNCurrentWeatherViewController.m */; };
 		701FB0361B286E95009A7D74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0351B286E95009A7D74 /* Images.xcassets */; };
 		701FB0391B286E95009A7D74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701FB0371B286E95009A7D74 /* LaunchScreen.xib */; };
 		701FB0451B286E95009A7D74 /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FB0441B286E95009A7D74 /* WeatherTests.m */; };
-		7080E87B1B2C6987001B99E3 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E87A1B2C6987001B99E3 /* ForecastViewController.m */; };
-		7080E8801B2C6B41001B99E3 /* CurrentWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E87F1B2C6B41001B99E3 /* CurrentWeather.m */; };
-		7080E8831B2C6B5D001B99E3 /* Forecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E8821B2C6B5D001B99E3 /* Forecast.m */; };
+		7080E87B1B2C6987001B99E3 /* WNForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E87A1B2C6987001B99E3 /* WNForecastViewController.m */; };
+		7080E8941B2C8824001B99E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7080E8961B2C8824001B99E3 /* InfoPlist.strings */; };
+		7080E8A21B2C9408001B99E3 /* WNCurrentWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E89F1B2C9408001B99E3 /* WNCurrentWeather.m */; };
+		7080E8A31B2C9408001B99E3 /* WNForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E8A11B2C9408001B99E3 /* WNForecast.m */; };
+		7080E8A71B2C943D001B99E3 /* WNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E8A61B2C943D001B99E3 /* WNLocationManager.m */; };
+		7080E8AA1B2D102E001B99E3 /* WNCurrentWeatherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E8A91B2D102E001B99E3 /* WNCurrentWeatherManager.m */; };
+		7080E8AD1B2D15A3001B99E3 /* WNNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080E8AC1B2D15A3001B99E3 /* WNNetWorkManager.m */; };
+		70AAA8771B2EC93200D9404A /* MTLModel+WNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA8761B2EC93200D9404A /* MTLModel+WNHelper.m */; };
+		70AAA87D1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA87C1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m */; };
 		924A7732F6354E06DA846886 /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601E69D42EEF557DC06C103 /* libPods-Weather.a */; };
 /* End PBXBuildFile section */
 
@@ -33,21 +39,35 @@
 		701FB0251B286E95009A7D74 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701FB0291B286E95009A7D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701FB02A1B286E95009A7D74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		701FB02C1B286E95009A7D74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		701FB02D1B286E95009A7D74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		701FB02F1B286E95009A7D74 /* CurrentWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentWeatherViewController.h; sourceTree = "<group>"; };
-		701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentWeatherViewController.m; sourceTree = "<group>"; };
+		701FB02C1B286E95009A7D74 /* WNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNAppDelegate.h; sourceTree = "<group>"; };
+		701FB02D1B286E95009A7D74 /* WNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNAppDelegate.m; sourceTree = "<group>"; };
+		701FB02F1B286E95009A7D74 /* WNCurrentWeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNCurrentWeatherViewController.h; sourceTree = "<group>"; };
+		701FB0301B286E95009A7D74 /* WNCurrentWeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNCurrentWeatherViewController.m; sourceTree = "<group>"; };
 		701FB0351B286E95009A7D74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		701FB0381B286E95009A7D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		701FB03E1B286E95009A7D74 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		701FB0431B286E95009A7D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701FB0441B286E95009A7D74 /* WeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTests.m; sourceTree = "<group>"; };
-		7080E8791B2C6987001B99E3 /* ForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
-		7080E87A1B2C6987001B99E3 /* ForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
-		7080E87E1B2C6B41001B99E3 /* CurrentWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentWeather.h; path = Model/CurrentWeather.h; sourceTree = "<group>"; };
-		7080E87F1B2C6B41001B99E3 /* CurrentWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentWeather.m; path = Model/CurrentWeather.m; sourceTree = "<group>"; };
-		7080E8811B2C6B5D001B99E3 /* Forecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Forecast.h; path = Model/Forecast.h; sourceTree = "<group>"; };
-		7080E8821B2C6B5D001B99E3 /* Forecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Forecast.m; path = Model/Forecast.m; sourceTree = "<group>"; };
+		7080E8791B2C6987001B99E3 /* WNForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNForecastViewController.h; sourceTree = "<group>"; };
+		7080E87A1B2C6987001B99E3 /* WNForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNForecastViewController.m; sourceTree = "<group>"; };
+		7080E8951B2C8824001B99E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7080E8971B2C883E001B99E3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7080E8981B2C883F001B99E3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		7080E89E1B2C9408001B99E3 /* WNCurrentWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNCurrentWeather.h; path = Model/WNCurrentWeather.h; sourceTree = "<group>"; };
+		7080E89F1B2C9408001B99E3 /* WNCurrentWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WNCurrentWeather.m; path = Model/WNCurrentWeather.m; sourceTree = "<group>"; };
+		7080E8A01B2C9408001B99E3 /* WNForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNForecast.h; path = Model/WNForecast.h; sourceTree = "<group>"; };
+		7080E8A11B2C9408001B99E3 /* WNForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WNForecast.m; path = Model/WNForecast.m; sourceTree = "<group>"; };
+		7080E8A41B2C942D001B99E3 /* WNModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNModels.h; path = Model/WNModels.h; sourceTree = "<group>"; };
+		7080E8A51B2C943D001B99E3 /* WNLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNLocationManager.h; path = Manager/WNLocationManager.h; sourceTree = "<group>"; };
+		7080E8A61B2C943D001B99E3 /* WNLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WNLocationManager.m; path = Manager/WNLocationManager.m; sourceTree = "<group>"; };
+		7080E8A81B2D102E001B99E3 /* WNCurrentWeatherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNCurrentWeatherManager.h; path = Manager/WNCurrentWeatherManager.h; sourceTree = "<group>"; };
+		7080E8A91B2D102E001B99E3 /* WNCurrentWeatherManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WNCurrentWeatherManager.m; path = Manager/WNCurrentWeatherManager.m; sourceTree = "<group>"; };
+		7080E8AB1B2D15A3001B99E3 /* WNNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNNetWorkManager.h; path = Manager/WNNetWorkManager.h; sourceTree = "<group>"; };
+		7080E8AC1B2D15A3001B99E3 /* WNNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WNNetWorkManager.m; path = Manager/WNNetWorkManager.m; sourceTree = "<group>"; };
+		70AAA8751B2EC93200D9404A /* MTLModel+WNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+WNHelper.h"; sourceTree = "<group>"; };
+		70AAA8761B2EC93200D9404A /* MTLModel+WNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+WNHelper.m"; sourceTree = "<group>"; };
+		70AAA87B1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+WNTransformerAdditions.h"; path = "Model/NSValueTransformer+WNTransformerAdditions.h"; sourceTree = "<group>"; };
+		70AAA87C1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+WNTransformerAdditions.m"; path = "Model/NSValueTransformer+WNTransformerAdditions.m"; sourceTree = "<group>"; };
 		7601E69D42EEF557DC06C103 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,12 +115,13 @@
 		701FB0271B286E95009A7D74 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				701FB02C1B286E95009A7D74 /* AppDelegate.h */,
-				701FB02D1B286E95009A7D74 /* AppDelegate.m */,
-				701FB02F1B286E95009A7D74 /* CurrentWeatherViewController.h */,
-				701FB0301B286E95009A7D74 /* CurrentWeatherViewController.m */,
-				7080E8791B2C6987001B99E3 /* ForecastViewController.h */,
-				7080E87A1B2C6987001B99E3 /* ForecastViewController.m */,
+				701FB02C1B286E95009A7D74 /* WNAppDelegate.h */,
+				701FB02D1B286E95009A7D74 /* WNAppDelegate.m */,
+				701FB02F1B286E95009A7D74 /* WNCurrentWeatherViewController.h */,
+				701FB0301B286E95009A7D74 /* WNCurrentWeatherViewController.m */,
+				7080E8791B2C6987001B99E3 /* WNForecastViewController.h */,
+				7080E87A1B2C6987001B99E3 /* WNForecastViewController.m */,
+				7080E8991B2C8A5E001B99E3 /* Manager */,
 				7080E87D1B2C6AFA001B99E3 /* Models */,
 				701FB0351B286E95009A7D74 /* Images.xcassets */,
 				701FB0371B286E95009A7D74 /* LaunchScreen.xib */,
@@ -114,6 +135,7 @@
 			children = (
 				701FB0291B286E95009A7D74 /* Info.plist */,
 				701FB02A1B286E95009A7D74 /* main.m */,
+				7080E8961B2C8824001B99E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,12 +160,30 @@
 		7080E87D1B2C6AFA001B99E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7080E87E1B2C6B41001B99E3 /* CurrentWeather.h */,
-				7080E87F1B2C6B41001B99E3 /* CurrentWeather.m */,
-				7080E8811B2C6B5D001B99E3 /* Forecast.h */,
-				7080E8821B2C6B5D001B99E3 /* Forecast.m */,
+				7080E8A41B2C942D001B99E3 /* WNModels.h */,
+				70AAA87B1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.h */,
+				70AAA87C1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m */,
+				70AAA8751B2EC93200D9404A /* MTLModel+WNHelper.h */,
+				70AAA8761B2EC93200D9404A /* MTLModel+WNHelper.m */,
+				7080E89E1B2C9408001B99E3 /* WNCurrentWeather.h */,
+				7080E89F1B2C9408001B99E3 /* WNCurrentWeather.m */,
+				7080E8A01B2C9408001B99E3 /* WNForecast.h */,
+				7080E8A11B2C9408001B99E3 /* WNForecast.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		7080E8991B2C8A5E001B99E3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7080E8A51B2C943D001B99E3 /* WNLocationManager.h */,
+				7080E8A61B2C943D001B99E3 /* WNLocationManager.m */,
+				7080E8AB1B2D15A3001B99E3 /* WNNetWorkManager.h */,
+				7080E8AC1B2D15A3001B99E3 /* WNNetWorkManager.m */,
+				7080E8A81B2D102E001B99E3 /* WNCurrentWeatherManager.h */,
+				7080E8A91B2D102E001B99E3 /* WNCurrentWeatherManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		807EC94569503D4F7EA208BE /* Frameworks */ = {
@@ -209,8 +249,9 @@
 		701FB01D1B286E95009A7D74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WN;
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "信通惠德";
+				ORGANIZATIONNAME = WuNan;
 				TargetAttributes = {
 					701FB0241B286E95009A7D74 = {
 						CreatedOnToolsVersion = 6.1;
@@ -228,6 +269,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 701FB01C1B286E95009A7D74;
 			productRefGroup = 701FB0261B286E95009A7D74 /* Products */;
@@ -246,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				701FB0391B286E95009A7D74 /* LaunchScreen.xib in Resources */,
+				7080E8941B2C8824001B99E3 /* InfoPlist.strings in Resources */,
 				701FB0361B286E95009A7D74 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,12 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7080E8831B2C6B5D001B99E3 /* Forecast.m in Sources */,
-				701FB0311B286E95009A7D74 /* CurrentWeatherViewController.m in Sources */,
-				7080E87B1B2C6987001B99E3 /* ForecastViewController.m in Sources */,
-				701FB02E1B286E95009A7D74 /* AppDelegate.m in Sources */,
-				7080E8801B2C6B41001B99E3 /* CurrentWeather.m in Sources */,
+				70AAA8771B2EC93200D9404A /* MTLModel+WNHelper.m in Sources */,
+				701FB0311B286E95009A7D74 /* WNCurrentWeatherViewController.m in Sources */,
+				7080E8A71B2C943D001B99E3 /* WNLocationManager.m in Sources */,
+				70AAA87D1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m in Sources */,
+				7080E8A31B2C9408001B99E3 /* WNForecast.m in Sources */,
+				7080E87B1B2C6987001B99E3 /* WNForecastViewController.m in Sources */,
+				7080E8AD1B2D15A3001B99E3 /* WNNetWorkManager.m in Sources */,
+				7080E8A21B2C9408001B99E3 /* WNCurrentWeather.m in Sources */,
+				701FB02E1B286E95009A7D74 /* WNAppDelegate.m in Sources */,
 				701FB02B1B286E95009A7D74 /* main.m in Sources */,
+				7080E8AA1B2D102E001B99E3 /* WNCurrentWeatherManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +377,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				701FB0381B286E95009A7D74 /* Base */,
+				7080E8971B2C883E001B99E3 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7080E8961B2C8824001B99E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7080E8951B2C8824001B99E3 /* en */,
+				7080E8981B2C883F001B99E3 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

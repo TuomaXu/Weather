@@ -3,14 +3,14 @@
 //  Weather
 //
 //  Created by WuNan on 15/6/10.
-//  Copyright (c) 2015年 信通惠德. All rights reserved.
+//  Copyright (c) 2015年 WuNan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "WNAppDelegate.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([WNAppDelegate class]));
     }
 }
