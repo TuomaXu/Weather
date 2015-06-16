@@ -8,6 +8,7 @@
 
 #ifndef Weather_Models_h
 #define Weather_Models_h
+#import "WNWeather.h"
 #import "WNCurrentWeather.h"
 #import "WNForecast.h"
 

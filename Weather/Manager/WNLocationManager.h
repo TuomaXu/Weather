@@ -14,7 +14,17 @@ typedef void(^GetLocationFailed)(CLLocationManager* manager,NSError* err);
 
 @interface WNLocationManager : NSObject
 @property (nonatomic,strong,readonly)CLLocation * location;
+/**
+ *  获取地理位置控制器单例
+ *
+ *  @return 地理位置控制器单例
+ */
 +(instancetype)shareInstance;
-
+/**
+ *  获取当前所在的地理位置
+ *
+ *  @param successBlock 成功回调
+ *  @param failedBlock  失败回调
+ */
 -(void)getCurrentLocationSuccess:(GetLocationSuccess)successBlock failed:(GetLocationFailed)failedBlock;
 @end

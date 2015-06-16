@@ -7,17 +7,6 @@
 //
 #import "NSValueTransformer+WNTransformerAdditions.h"
 #import "WNCurrentWeather.h"
-@implementation WNWeather
-+(NSDictionary *)JSONKeyPathsByPropertyKey {
-    
-    return @{
-              @"weatherID":@"id",
-              @"weatherIcon":@"icon",
-              @"weatherMain":@"main",
-              @"weatherDesc":@"description"
-             };
-}
-@end
 
 @implementation WNCurrentWeather
 +(NSDictionary *)JSONKeyPathsByPropertyKey {

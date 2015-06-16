@@ -12,4 +12,5 @@
 
 
 +(instancetype)modelFromDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing *)error;
++(NSArray*)modelsFromArray:(NSArray *)arrayValue error:(NSError *__autoreleasing *)error;
 @end

@@ -8,6 +8,7 @@
 
 #import "WNCurrentWeatherViewController.h"
 #import "WNCurrentWeatherManager.h"
+#import "WNForecastManager.h"
 #import "WNModels.h"
 
 @interface WNCurrentWeatherViewController ()
@@ -17,12 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    [[WNCurrentWeatherManager new]getCurrentWeatherByCurrentLocationSuccess:^(id responseObject) {
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [WNCurrentWeatherManager getCurrentWeatherByCurrentLocationSuccess:^(id responseObject) {
         WNCurrentWeather * weather =[WNCurrentWeather modelFromDictionary:responseObject error:nil];
+    }];
+    [WNForecastManager getForecastByCityID:@1799629 success:^(id responseObject) {
+        NSArray * weathers = [WNForecast modelsFromArray:responseObject[@"list"] error:nil];
     }];
 }
 @end

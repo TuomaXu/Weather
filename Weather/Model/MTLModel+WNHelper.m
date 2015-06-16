@@ -16,4 +16,7 @@
 +(instancetype)modelFromDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing *)error {
     return [MTLJSONAdapter modelOfClass:self fromJSONDictionary:dictionaryValue error:error];
 }
++(NSArray*)modelsFromArray:(NSArray *)arrayValue error:(NSError *__autoreleasing *)error {
+    return [MTLJSONAdapter modelsOfClass:self fromJSONArray:arrayValue error:error];
+}
 @end
