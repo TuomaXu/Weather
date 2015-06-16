@@ -11,10 +11,10 @@
 @implementation WNWeather
 +(NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"weatherID":@"id",
-             @"weatherIcon":@"icon",
-             @"weatherMain":@"main",
-             @"weatherDesc":@"description"
+             NSStringFromSelector(@selector(weatherID)):@"id",
+             NSStringFromSelector(@selector(weatherIcon)):@"icon",
+             NSStringFromSelector(@selector(weatherMain)):@"main",
+             NSStringFromSelector(@selector(weatherDesc)):@"description"
              };
 }
 @end

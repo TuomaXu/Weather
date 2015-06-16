@@ -22,10 +22,12 @@
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [WNCurrentWeatherManager getCurrentWeatherByCurrentLocationSuccess:^(id responseObject) {
+        
         WNCurrentWeather * weather =[WNCurrentWeather modelFromDictionary:responseObject error:nil];
+        
     }];
-    [WNForecastManager getForecastByCityID:@1799629 success:^(id responseObject) {
-        NSArray * weathers = [WNForecast modelsFromArray:responseObject[@"list"] error:nil];
-    }];
+//    [WNForecastManager getForecastByCityID:@1799629 success:^(id responseObject) {
+//        NSArray * weathers = [WNForecast modelsFromArray:responseObject[@"list"] error:nil];
+//    }];
 }
 @end

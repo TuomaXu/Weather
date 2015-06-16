@@ -24,6 +24,10 @@
 		7083568E1B301FA90093565B /* WNForecastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7083568D1B301FA90093565B /* WNForecastManager.m */; };
 		708356911B3027150093565B /* MTLModel+WNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 708356901B3027150093565B /* MTLModel+WNHelper.m */; };
 		70AAA87D1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA87C1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m */; };
+		70C856E11B30EA4600471913 /* WNPullViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C856E01B30EA4600471913 /* WNPullViewTransition.m */; };
+		70C856E61B30ED4400471913 /* PresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C856E31B30ED4400471913 /* PresentingAnimator.m */; };
+		70C856E71B30ED4400471913 /* DismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C856E51B30ED4400471913 /* DismissingAnimator.m */; };
+		70C856EA1B30EE2500471913 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C856E91B30EE2500471913 /* UIView+SetRect.m */; };
 		924A7732F6354E06DA846886 /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601E69D42EEF557DC06C103 /* libPods-Weather.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,14 @@
 		708356901B3027150093565B /* MTLModel+WNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+WNHelper.m"; path = "Model/MTLModel+WNHelper.m"; sourceTree = "<group>"; };
 		70AAA87B1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+WNTransformerAdditions.h"; path = "Model/NSValueTransformer+WNTransformerAdditions.h"; sourceTree = "<group>"; };
 		70AAA87C1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+WNTransformerAdditions.m"; path = "Model/NSValueTransformer+WNTransformerAdditions.m"; sourceTree = "<group>"; };
+		70C856DF1B30EA4600471913 /* WNPullViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNPullViewTransition.h; sourceTree = "<group>"; };
+		70C856E01B30EA4600471913 /* WNPullViewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNPullViewTransition.m; sourceTree = "<group>"; };
+		70C856E21B30ED4400471913 /* PresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingAnimator.h; sourceTree = "<group>"; };
+		70C856E31B30ED4400471913 /* PresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimator.m; sourceTree = "<group>"; };
+		70C856E41B30ED4400471913 /* DismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissingAnimator.h; sourceTree = "<group>"; };
+		70C856E51B30ED4400471913 /* DismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissingAnimator.m; sourceTree = "<group>"; };
+		70C856E81B30EE2500471913 /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		70C856E91B30EE2500471913 /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
 		7601E69D42EEF557DC06C103 /* libPods-Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78628E13D450B304AFF9B422 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		E9507CCAD8EA81588366F240 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +139,9 @@
 				701FB0301B286E95009A7D74 /* WNCurrentWeatherViewController.m */,
 				7080E8791B2C6987001B99E3 /* WNForecastViewController.h */,
 				7080E87A1B2C6987001B99E3 /* WNForecastViewController.m */,
+				70C856E81B30EE2500471913 /* UIView+SetRect.h */,
+				70C856E91B30EE2500471913 /* UIView+SetRect.m */,
+				70C856DE1B30EA1C00471913 /* View */,
 				7080E8991B2C8A5E001B99E3 /* Manager */,
 				7080E87D1B2C6AFA001B99E3 /* Models */,
 				701FB0351B286E95009A7D74 /* Images.xcassets */,
@@ -194,6 +209,19 @@
 				7083568D1B301FA90093565B /* WNForecastManager.m */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		70C856DE1B30EA1C00471913 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70C856DF1B30EA4600471913 /* WNPullViewTransition.h */,
+				70C856E01B30EA4600471913 /* WNPullViewTransition.m */,
+				70C856E21B30ED4400471913 /* PresentingAnimator.h */,
+				70C856E31B30ED4400471913 /* PresentingAnimator.m */,
+				70C856E41B30ED4400471913 /* DismissingAnimator.h */,
+				70C856E51B30ED4400471913 /* DismissingAnimator.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		807EC94569503D4F7EA208BE /* Frameworks */ = {
@@ -354,15 +382,19 @@
 				7080E8A71B2C943D001B99E3 /* WNLocationManager.m in Sources */,
 				7083568E1B301FA90093565B /* WNForecastManager.m in Sources */,
 				70AAA87D1B2ECE2B00D9404A /* NSValueTransformer+WNTransformerAdditions.m in Sources */,
+				70C856E71B30ED4400471913 /* DismissingAnimator.m in Sources */,
+				70C856EA1B30EE2500471913 /* UIView+SetRect.m in Sources */,
 				7080E8A31B2C9408001B99E3 /* WNForecast.m in Sources */,
 				7080E87B1B2C6987001B99E3 /* WNForecastViewController.m in Sources */,
 				7080E8AD1B2D15A3001B99E3 /* WNNetWorkManager.m in Sources */,
+				70C856E61B30ED4400471913 /* PresentingAnimator.m in Sources */,
 				708356911B3027150093565B /* MTLModel+WNHelper.m in Sources */,
 				7083568B1B30130B0093565B /* WNWeather.m in Sources */,
 				7080E8A21B2C9408001B99E3 /* WNCurrentWeather.m in Sources */,
 				701FB02E1B286E95009A7D74 /* WNAppDelegate.m in Sources */,
 				701FB02B1B286E95009A7D74 /* main.m in Sources */,
 				7080E8AA1B2D102E001B99E3 /* WNCurrentWeatherManager.m in Sources */,
+				70C856E11B30EA4600471913 /* WNPullViewTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
